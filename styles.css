@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    height: 100vh;
+    /* position: relative; */
+    /* border: solid; */
+/*     font-size: 1.6rem; */
+    font-family: 'Fira Code';
+    /* scroll-snap-type: y mandatory; */
+}
+
+ul{
+    background-color: rgb(8, 7, 58);
+    font-size: 1em;
+    margin: 0px;
+    padding: 0px;
+    width: 100vw;
+    color: white;
+    list-style-type: none;
+    /* position: absolute; */
+    top: 0;
+    position: fixed;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    /* border: solid; */
+}
+
+
+ul a{
+    padding: 10px;
+    /* border: solid; */
+}
+
+ul a:link{
+  color: rgb(6, 255, 255);
+  text-decoration: none;
+}
+ul a:visited{
+  color: rgb(0, 255, 200);
+  text-decoration: none;
+}
+ul a:hover{
+    background-color: rgb(8, 7, 58);
+    text-decoration: underline;
+  
+}
+main{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    scroll-snap-type: x mandatory;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+section{
+    flex: none;
+    width: 100vw;
+    height: 100vh;
+    overflow-y: auto;
+    /* border: solid; */
+    scroll-snap-align: start;
+/*   border: solid; */
+}
+
+section:nth-child(1){
+    background-image: url('./images/joanna-kosinska-1_CMoFsPfso-unsplash.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section:nth-child(2){
+    background-image: url('./images/anas-alshanti-feXpdV001o4-unsplash.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section:nth-child(3){
+    background-image: url('./images/kelli-tungay-2LJ4rqK2qfU-unsplash.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#projects{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#projects a:link{
+    color: rgb(1, 1, 75);
+    text-decoration: none;
+}
+#projects a:visited{
+    color: rgb(1, 1, 75);
+    text-decoration: none;
+}
+#projects a:hover{
+    color: rgb(1, 1, 75);
+    text-decoration: underline;
+}
+.proj1{
+    width: 300px;
+    height: 300px;
+    box-shadow: 0px 4px 8px 0px #04f7ff;
+    background-color: white;
+    border: groove 2px #04f7ff;
+    margin: 80px 20px;
+    border-radius: 5%;
+    transition: all 0.5s;
+}
+.proj1 img{
+    border-radius: 5% 5% 0% 0%;
+    width: 100%;
+    height: 70%;
+    margin-bottom: 0px;
+}
+.proj1 div{
+    padding: 2% 16%;
+    margin-top: 0;
+}
+.proj1:hover{
+    box-shadow: 0px 4px 16px 4px #04f7ff;
+}
+
+#welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1rem;
+    color: #04f7ff; 
+}
+#welcome h3{
+    background-color: rgb(1, 1, 75);
+    padding: 5px;
+    border-radius: 5px;
+}
+#profilePic{
+    width: 100px;
+    border: groove 2px #04f7ff;
+    border-radius: 50%;
+    transition: all 0.5s;
+}
+#profilePic:hover{
+    box-shadow: 0px 4px 16px 4px #04f7ff;
+}
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    color: #04f7ff; 
+}
+
+#about h4{
+    background-color: rgb(1, 1, 75);
+    padding: 5px;
+    border-radius: 5px;
+}
+#contact{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: black;
+    width: 50%;
+    padding: 10px 0px;
+    
+}
+#contact a{
+    padding: 10px;
+}
+#contact a:link{
+    color: black;
+    /* transform: scale(1.5); */
+    font-size: 1.8rem;
+    transition: all 0.4s;
+    
+}
+#contact a:visited{
+    color: black;
+    /* transform: scal(1.5); */
+    font-size: 1.8rem;
+    transition: all 0.4s;
+    
+}
+#contact a:hover{
+    font-size: 1.8rem;
+    color: black;
+    transform: rotate(360deg);
+    
+}
+
+@media screen and (min-width: 921px){
+    ul{
+      font-size: 1.7em;
+    }
+    #welcome{
+        font-size: 2rem;
+    }
+    #about{
+        font-size: 2rem;
+    }
+
+    ul a{
+        padding: 20px;
+    }
+  }
