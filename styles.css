@@ -1,6 +1,6 @@
 *{
-    box-sizing: border-box;
     scroll-behavior: smooth;
+    box-sizing: border-box;
 }
 
 body{
@@ -56,25 +56,25 @@ main{
 }
 section{
     flex: none;
-    width: 100vw;
-    height: 100vh;
+    width: 100%;
+    height: 100%;
     overflow-y: auto;
-    scroll-snap-align: start ;
+    scroll-snap-align: start;
 }
 
-section:nth-child(1){
+section:nth-child(2){
     background-image: url('https://images.unsplash.com/photo-1497005367839-6e852de72767?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=747&q=80');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
-section:nth-child(2){
-    background-image: url('https://images.unsplash.com/photo-1480506132288-68f7705954bd?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=793&q=80');
+section:nth-child(3){
+    background-image: url('https://images.unsplash.com/photo-1422207258071-70754198c4a2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=741&q=80');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
 }
-section:nth-child(3){
+section:nth-child(1){
     background-image: url('https://images.unsplash.com/photo-1513542789411-b6a5d4f31634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=667&q=80');
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -85,6 +85,7 @@ section:nth-child(3){
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    /* flex-direction: column; */
 }
 #projects a:link{
     color: rgb(1, 1, 75);
@@ -99,14 +100,14 @@ section:nth-child(3){
     text-decoration: underline;
 }
 .proj1{
-    width: 300px;
-    height: 300px;
+    width: 500px;
+    height: 500px;
     box-shadow: 0px 4px 8px 0px #04f7ff;
     background-color: white;
     border: groove 2px #04f7ff;
     margin: 80px 20px;
     border-radius: 5%;
-    transition: all 0.5s;
+    transition: box-shadow 0.5s;
 }
 .proj1 img{
     border-radius: 5% 5% 0% 0%;
@@ -115,6 +116,7 @@ section:nth-child(3){
     margin-bottom: 0px;
 }
 .proj1 div{
+    text-align: center;
     padding: 2% 16%;
     margin-top: 0;
 }
@@ -144,7 +146,7 @@ section:nth-child(3){
     width: 100px;
     border: groove 2px #04f7ff;
     border-radius: 50%;
-    transition: all 0.5s;
+    transition: box-shadow 0.5s;
 }
 #profilePic:hover{
     box-shadow: 0px 4px 16px 4px #04f7ff;
