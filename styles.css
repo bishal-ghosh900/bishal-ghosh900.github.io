@@ -160,7 +160,8 @@ section:nth-child(3){
     justify-content: center;
     align-items: center;
     font-size: 1rem;
-    color: #04f7ff; 
+    color: #04f7ff;
+    text-align: center;
 }
 
 #about h4{
