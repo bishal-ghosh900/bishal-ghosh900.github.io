@@ -1,6 +1,6 @@
 
 const wid = window.innerWidth;
-if(wid < 700){
+if(wid < 900){
     let h = document.getElementsByClassName("htag");
     let d = document.getElementsByClassName("proj1");
     let iTag = document.getElementsByTagName("i");
